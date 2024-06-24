@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phincon Academy</title>
+    <style>
+        body {
+            background-color: #FFFF00; 
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #FFFF;
+            border: 2px solid #090909;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+            width: 300px;
+        }
+
+
+        .image-container {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #090909;
+        }
+
+        h1:hover{
+            color: rgb(201, 201, 47);
+        }
+
+        .card:hover{
+            box-shadow: 15px 15px;
+        }
+
+        .description {
+            color: grey;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .card-header {
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            width: 55px;
+            background: yellow;
+            padding: 8px;
+            border-radius: 10%;
+        }
+
+        .card-body {
+            font-size: 13px;
+        }
+
+        .author img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        .author span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image-container">
+            <img src="file:///C:/Users/fathi/AppData/Local/Temp/7ceff131-f3c1-4757-b7e5-e906dd429ebd_assets.zip.ebd/assets/images/illustration-article.svg">
+        </div>
+        <div>
+            <h2 class="card-header">Learning</h2>
+        </div>
+        <div class="card-body">
+        <p><b>Published 21 Dec 2023</b></p>
+        <h1 class="title">HTML & CSS Foundations</h1>
+        <p class="description">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <div class="author">
+            <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=582&q=80" alt="Author Image">
+            <span>Greg Hooper</span>
+        </div>
+    </div>
+</body>
+</html>
