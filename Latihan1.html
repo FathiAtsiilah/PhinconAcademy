@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html lang="id">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Phincon Academy</title>
-    </head>
-    <body>
-        <h1>Welcome to Fullstack Web Javascript Course!</h1>
-        <p>Mari kita belajar HTML dan JavaScript!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside</title>
+    <style>
+        /* Style container dengan tepi bulat, latar belakang abu-abu dan beberapa padding dan margin */
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
 
-        <h2>Percakapan Lita dan Tasya</h2>
-        <p>Lita berkata,&quot;Kak Tasya, ajarin aku HTML&amp;JavaScript dong!&quot;<br />
-            &quot;Yuk belajar bareng di Phincon Academy, Lita!&quot;. Jawab Kak Tasya.
-        </p>
-    </body>
+/* Hapus float setelah container */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Gambar melakukan float di dalam container ke kiri. Tambahkan margin kanan, dan beri gaya gambar sebagai lingkaran*/
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Tingkatkan ukuran font elemen span */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Tambahkan kueri media untuk responsivitas. Ini akan memusatkan teks dan gambar di dalam container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://dosenit.com/wp-content/uploads/2021/02/136-1369892_avatar-people-person-business-user-man-character-avatar.png" alt="Avatar" style="width:90px">
+        <p><span>Evan John.</span> Owner okey.</p>
+        <p>Website ini memang yang terbaik.</p>
+      </div>
+      
+      <div class="container">
+        <img src="https://dosenit.com/wp-content/uploads/2021/02/images.png" alt="Avatar" style="width:90px">
+        <p><span>Marianna marianne.</span> Leader dokey.</p>
+        <p>Website ini membantu ku!.</p>
+      </div>
+</body>
 </html>
